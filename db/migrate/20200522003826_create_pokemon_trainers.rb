@@ -1,4 +1,4 @@
-class CreatePokemonTrainers < ActiveRecord::Migration[6.0]
+class CreatePokemonTrainers < ActiveRecord::Migration[6.0] 
   def change
     create_table :pokemon_trainers do |t|
       t.references :pokemon, null: false, foreign_key: true

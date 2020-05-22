@@ -1,5 +1,5 @@
 class CreateTrainers < ActiveRecord::Migration[6.0]
-  def change
+  def change 
     create_table :trainers do |t|
       t.string :name
       t.string :gender
