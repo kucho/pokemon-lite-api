@@ -26,7 +26,7 @@ class PokemonsController < ApplicationController
     def destroy
         @pokemon=Pokemon.find(params[:id])
         @pokemon.destroy
-        head :no_content
+        render json: { status: 'Successfully destroyed', data: @pokemon }, status: :ok
     end
 private
 def pokemon_params
