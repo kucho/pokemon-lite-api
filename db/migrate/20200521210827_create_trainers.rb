@@ -6,7 +6,7 @@ class CreateTrainers < ActiveRecord::Migration[6.0]
       t.integer :age
       t.string :home_region
       t.string :team_member_status
-      t.integer :win
+      t.integer :wins
       t.integer :losses
 
       t.timestamps
